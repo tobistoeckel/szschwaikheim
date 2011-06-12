@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+
+html {
+	background-image: url("bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Droid Sans';
+	font-size: 0.8em;
+}
+
+body {
+	margin: 1em auto 1em auto;
+	width: 80%;
+	min-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+/*************************** HEADER ************************************/
+
+div#header {
+	background-image: url("header.jpg");
+	background-position: center;
+	height: 14em;
+}
+
+div#header h1 {
+	display: none;
+}
+
+div#header ul {
+	display: none;
+}
+
+div#skizunft {
+	background-image: url("skizunft.png");
+	height: 37px;
+	width: 265px
+}
+
+div#schnee {
+   background-image: url("schnee.png");
+   height: 65px;
+   width: 175px;
+	position: absolute;
+	top: 90px;
+	left: 33%;
+}
+
+div#sport {
+   background-image: url("sport.png");
+   height: 65px;
+   width: 154px;
+   position: absolute;
+   top: 60px;
+   left: 53%;
+}
+
+div#spass {
+   background-image: url("spass.png");
+   height: 65px;
+   width: 134px;
+   position: absolute;
+   top: 75px;
+   left: 72%;
+}
+
+/************************* SHADOW BORDER ********************************/
+
+div#tlcorner {
+	background-image: url("border50/tlcorner.png");
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+div#trcorner {
+   background-image: url("border50/trcorner.png");
+   float: right;
+   width: 40px;
+   height: 40px;
+}
+
+div#topborder {
+	background-image: url("border50/top.png");
+	background-position: top;
+	background-repeat: repeat-x;
+	height: 40px;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+div#leftborder {
+	background-image: url("border50/left.png");
+	background-position: left;
+	background-repeat: repeat-y;
+}
+
+div#rightborder {
+   background-image: url("border50/right.png");
+   background-position: right;
+   background-repeat: repeat-y;
+}
+
+div#contentpane {
+	background-color: white;
+	margin: 0px 40px;
+}
+
+/***************************** TOP NAVIGATION **********************************/
+
+div#topnav {
+	background-image: url("topnav.png");
+	background-repeat: repeat-x;
+	font-size: 16px;
+	height: 44px;
+}
+
+div#topnav a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	height: 30px;
+	padding-top: 14px;
+}
+
+div#topnav a:hover {
+   background-image: url("topnavhover.png");
+   background-repeat: repeat-x;
+}
+
+div#topnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#topnav li {
+	display: block;
+	float: left;
+	width: 10em;
+	height: 44px;
+	text-align: center;
+}
+
+div.clear {
+	clear: all;
+}
+
+/**************************** SIDEBAR COLUMNS **********************************/
+
+div.column {
+	padding: 1%;
+}
+
+div.column h1 {
+   font-size: 1.5em;
+}
+
+div.column h2 {
+	font-size: 1.2em;
+}
+
+div#leftcol {
+	float: left;
+	width: 17%;
+}
+
+div#leftnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#rightcol {
+	float: right;
+	width: 20%;
+}
+
+/**************************** MAIN BODY **********************************/
+
+div#main {
+	margin: 0px 22% 0px 19%;
+	padding: 1%;
+}
+
+/*************************** SHADOW BORDER ********************************/
+
+div#blcorner {
+   background-image: url("border50/blcorner.png");
+   float: left;
+   width: 40px;
+   height: 40px;
+}
+
+div#brcorner {
+   background-image: url("border50/brcorner.png");
+   float: right;
+   width: 40px;
+   height: 40px;
+}
+
+div#bottomborder {
+	background-image: url("border50/bottom.png");
+	height: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
