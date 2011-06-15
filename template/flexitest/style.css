@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 html {
 	background-image: url("bg.jpg");
@@ -11,13 +11,20 @@ html {
 
 body {
 	margin: 1em auto 1em auto;
-	width: 80%;
-	min-width: 960px;
+   width: 80%;
+   min-width: 960px;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
+
 
 /*************************** HEADER ************************************/
 
@@ -38,34 +45,34 @@ div#header ul {
 div#skizunft {
 	background-image: url("skizunft.png");
 	height: 37px;
-	width: 265px
+	width: 265px;
 }
 
 div#schnee {
    background-image: url("schnee.png");
    height: 65px;
    width: 175px;
-	position: absolute;
-	top: 90px;
-	left: 33%;
+	float: left;
+	margin-top: 0.7em;
+	margin-left: 29%;
 }
 
 div#sport {
    background-image: url("sport.png");
    height: 65px;
    width: 154px;
-   position: absolute;
-   top: 60px;
-   left: 53%;
+	float: left;
+   margin-top: -2.5em;
+   margin-left: 5%;
 }
 
 div#spass {
    background-image: url("spass.png");
    height: 65px;
    width: 134px;
-   position: absolute;
-   top: 75px;
-   left: 72%;
+	float: left;
+   margin-top: -0.5em;
+   margin-left: 8%;
 }
 
 /************************* SHADOW BORDER ********************************/
@@ -147,7 +154,7 @@ div#topnav li {
 }
 
 div.clear {
-	clear: all;
+	clear: both;
 }
 
 /**************************** SIDEBAR COLUMNS **********************************/
