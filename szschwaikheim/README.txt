@@ -28,12 +28,12 @@ installed in sites/all/themes/, but any valid theme directory is acceptable
 
  1. Setup the location for your new sub-theme.
 
-    Copy the STARTERKIT folder out of the zen/ folder and rename it to be your
+    Copy the szschwaikheim folder out of the zen/ folder and rename it to be your
     new sub-theme. IMPORTANT: The name of your sub-theme must start with an
     alphabetic character and can only contain lowercase letters, numbers and
     underscores.
 
-    For example, copy the sites/all/themes/zen/STARTERKIT folder and rename it
+    For example, copy the sites/all/themes/zen/szschwaikheim folder and rename it
     as sites/all/themes/foo.
 
       Why? Each theme should reside in its own folder. To make it easier to
@@ -42,11 +42,11 @@ installed in sites/all/themes/, but any valid theme directory is acceptable
 
  2. Setup the basic information for your sub-theme.
 
-    In your new sub-theme folder, rename the STARTERKIT.info.txt file to include
+    In your new sub-theme folder, rename the szschwaikheim.info.txt file to include
     the name of your new sub-theme and remove the ".txt" extension. Then edit
     the .info file by editing the name and description field.
 
-    For example, rename the foo/STARTERKIT.info file to foo/foo.info. Edit the
+    For example, rename the foo/szschwaikheim.info file to foo/foo.info. Edit the
     foo.info file and change "name = Zen Sub-theme Starter Kit" to "name = Foo"
     and "description = Read..." to "description = A Zen sub-theme".
 
@@ -84,11 +84,11 @@ installed in sites/all/themes/, but any valid theme directory is acceptable
  4. Edit your sub-theme to use the proper function names.
 
     Edit the template.php and theme-settings.php files in your sub-theme's
-    folder; replace ALL occurrences of "STARTERKIT" with the name of your
+    folder; replace ALL occurrences of "szschwaikheim" with the name of your
     sub-theme.
 
     For example, edit foo/template.php and foo/theme-settings.php and replace
-    every occurrence of "STARTERKIT" with "foo".
+    every occurrence of "szschwaikheim" with "foo".
 
     It is recommended to use a text editing application with search and
     "replace all" functionality.

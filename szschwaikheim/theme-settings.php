@@ -7,15 +7,15 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function STARTERKIT_form_system_theme_settings_alter(&$form, &$form_state)  {
+function szschwaikheim_form_system_theme_settings_alter(&$form, &$form_state)  {
 
   // Create the form using Forms API: http://api.drupal.org/api/7
 
   /* -- Delete this line if you want to use this setting
-  $form['STARTERKIT_example'] = array(
+  $form['szschwaikheim_example'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('STARTERKIT sample setting'),
-    '#default_value' => theme_get_setting('STARTERKIT_example'),
+    '#title'         => t('szschwaikheim sample setting'),
+    '#default_value' => theme_get_setting('szschwaikheim_example'),
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
