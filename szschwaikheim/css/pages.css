@@ -7,7 +7,6 @@
  * ul.links, .pager, .more-link, etc.
  */
 
-
 /*
  * Body
  */
@@ -40,6 +39,7 @@ body {
  * Header
  */
 #header {
+	background-color: blue;
 }
 
 #header .section {

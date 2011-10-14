@@ -10,6 +10,7 @@
  * @see http://snook.ca/archives/html_and_css/no_css_reset/
  */
 
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
 
 /*
  * Fonts
@@ -110,7 +111,8 @@ fieldset {
 
    */
 
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  /*font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;*/
+  font-family: 'Droid Sans';
 }
 
 pre,
