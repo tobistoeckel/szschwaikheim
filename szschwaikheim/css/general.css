@@ -1,0 +1,322 @@
+/*******************************************************************************
+ Color Repertoire
+   Blue   | Bright: #5DA6D7  Dark: #0052A4  Pretty Bright: #DEF1FE  Extremely Bright: #F2FAFF
+   Orange | Bright: #FFD900  Dark: #FF8000
+   Orange | Topmenu bright gradient: Bright: #FFE340   Dark: #FFA040
+                                                                              */
+
+/* Orange Gradient */
+.topmenu,
+.sidebar h2,
+.navigation .active a,
+.navigation .active a:hover,
+.navigation .parent a,
+.navigation .parent a:hover,
+.navigation .parent li.active a,
+.navigation .parent li.active a:hover {
+	/* Fallback Color */       background: #FFD900;
+   /* Fallback Image */       background: url("../images/gradient_orange.png");
+   /* Fallback SVG */         background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5MzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkQ5MDAiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRjgwMDAiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c5MzUpIiAvPgo8L3N2Zz4=);
+   /* FF3.6+ */               background: -moz-linear-gradient(top, #ffd900 0%, #ff8000 100%);
+   /* Chrome,Safari4+ */      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd900), color-stop(100%,#ff8000));
+   /* Chrome10+,Safari5.1+ */ background: -webkit-linear-gradient(top, #ffd900 0%,#ff8000 100%);
+   /* Opera11.10+ */          background: -o-linear-gradient(top, #ffd900 0%,#ff8000 100%);
+   /* IE10+ */                background: -ms-linear-gradient(top, #ffd900 0%,#ff8000 100%);
+   /* IE6-8 */                filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd900', endColorstr='#ff8000',GradientType=0 );
+   /* W3C */                  background: linear-gradient(top, #ffd900 0%,#ff8000 100%);
+}
+
+/* Orange Gradient Reversed */
+.navigation .active a:active,
+.navigation .parent a:active,
+.navigation .parent li.active a:active,
+.topmenu a:active {
+   /* Fallback Color */       background: #FF8000;
+   /* Fallback Image */       background: url("../images/gradient_orange_reverse.png");
+   /* Fallback SVG */         background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0ZGODAwMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRDkwMCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzc5KSIgLz4KPC9zdmc+);
+   /* FF3.6+ */               background: -moz-linear-gradient(top, #ff8000 0%, #ffd900 100%);
+   /* Chrome,Safari4+ */      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8000#ffd900), color-stop(100%,#ffd900));
+   /* Chrome10+,Safari5.1+ */ background: -webkit-linear-gradient(top, #ff8000 0%,#ffd900 100%);
+   /* Opera11.10+ */          background: -o-linear-gradient(top, #ff8000 0%,#ffd900 100%);
+   /* IE10+ */                background: -ms-linear-gradient(top, #ff8000 0%,#ffd900 100%);
+   /* IE6-8 */                filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8000', endColorstr='#ffd900',GradientType=0 );
+   /* W3C */                  background: linear-gradient(top, #ff8000 0%,#ffd900 100%);
+}
+
+/* Rounded Corners */
+.content,
+.navigation a,
+.navigation li,
+.news,
+.footer .inner {
+	border-radius: 10px;
+}
+/*******************************************************************************
+ Text                                                                         */
+ 
+body {
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+	font-size:   13px;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0.7em;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.header h1 {
+	color: white;
+}
+
+.sidebar h2 {
+   /* TODO font-size */
+   font-size: 110%;
+   border: 1px white solid;
+   text-align: center;
+} 
+
+.navigation a {
+	color: black;
+	text-decoration: none;
+}
+
+.topmenu a {
+	color: black;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+.topmenu a:hover {
+	color: black;
+	text-shadow: 0px 0px 2px #ffffff;
+}
+ 
+
+/*******************************************************************************
+ Layout                                                                       */
+ 
+body {
+	margin:  0;
+	padding: 0;
+}
+
+.header {
+	height: 170px;
+}
+
+.header h1 {
+	text-align:  center;
+	margin:      0;
+	padding-top: 65px;
+	font-size: 35px;
+	/* TODO center properly */
+}
+
+.topmenu {
+   margin-bottom: 20px;
+}
+
+.topmenu ul {
+   margin:  0;
+   padding: 0;
+}
+
+.topmenu a {
+   display: block; /* to avoid border collapsing */
+   /* TODO Reasonable Padding */
+   padding: 10px;
+   text-align: center;
+}
+
+.sidebar h2 {
+   margin-top:    0;
+   margin-bottom: 10px;
+   /* TODO reasonable padding */
+   padding:       10px;
+}
+
+.sidebar,
+.content {
+   margin-bottom: 20px;
+}
+
+.footer {
+   margin-bottom: 20px;
+}
+
+.content {
+   padding: 20px;
+}
+
+.news {
+   padding: 10px;
+}
+
+.navigation ul {
+   list-style-type: none;
+   margin:          0;
+   padding:         0;
+}
+
+.navigation li {
+	margin:        0;
+	margin-bottom: 10px;
+}
+
+.navigation a {
+   /* Apply all styling to the a-tag to get hover-support in IE */
+   display:       block;
+   padding:       5px;
+   margin-top:    0;
+}
+
+.footer {
+	text-align: center;
+}
+
+/*******************************************************************************
+ Style/Color                                                                  */
+
+body {
+	background-color: #5DA6D7;
+}
+
+.header {
+	/* Fallback color */       background: #0052A4;                                                                                           
+	/* Fallback image */       background: url("../images/gradient_blue_big.png");
+	/* Fallback svg */         background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0NTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMDUyQTQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1REE2RDciIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c0NTkpIiAvPgo8L3N2Zz4=);
+   /* FF3.6+ */               background: -moz-linear-gradient(top, #0052a4 0%, #5da6d7 100%);                                                    
+   /* Chrome,Safari4+ */      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0052a4), color-stop(100%,#5da6d7));      
+   /* Chrome10+,Safari5.1+ */ background: -webkit-linear-gradient(top, #0052a4 0%,#5da6d7 100%);                                                   
+   /* Opera11.10+ */          background: -o-linear-gradient(top, #0052a4 0%,#5da6d7 100%);                                                        
+   /* IE10+ */                background: -ms-linear-gradient(top, #0052a4 0%,#5da6d7 100%);                                                       
+   /* IE6-8 */                filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#0052a4', endColorstr='#5da6d7',GradientType=0 ); 
+   /* W3C */                  background: linear-gradient(top, #0052a4 0%,#5da6d7 100%);                                                           
+}
+
+.topmenu {
+	background-color: #FFD900;
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+}
+
+/* White Transparent Background */
+.transparent-container,
+.navigation a,
+.parent,
+.footer .inner,
+.news {
+   background-image: url("../images/pixel_75.png");
+}
+
+.transparent-container,
+.navigation a,
+.parent,
+.footer .inner,
+.news {
+	border: 1px white solid;
+}
+
+.navigation .parent li a {
+	background-image: none;
+	background-color: none;
+	filter: none;
+}
+
+.sidebar h2 {
+   background-color: #FFD900;
+   font-weight: bold;
+}
+
+.navigation a:hover,
+.navigation .parent li a:hover {
+	filter: none;
+	background-image: url("../images/pixel_75.png");
+}
+
+.navigation a:active {
+	background-color: white;
+}
+
+
+
+
+.navigation .active a {
+   font-weight: bold;
+}
+
+.navigation .active a:hover {
+}
+
+.navigation .parent a:hover {
+}
+
+.navigation .parent li a {
+	filter: none;
+   font-weight: normal;
+}
+
+.navigation .parent li a:active {
+   filter: none;
+   background: white;
+}
+
+.navigation .parent li.active a {
+   font-weight: bold;
+}
+
+.navigation .parent li.active a:hover {
+}
+
+.navigation .parent a {
+	border: none;
+}
+
+.navigation .parent li {
+	margin-bottom: 0;
+}
+
+.headerimage_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/volle_170.png");
+	height: 170px;
+	width:  243px;
+}
+
+* html .headerimage_left {
+	background-image: url("../images/volle_170_png8.png");
+}
+
+.headerimage_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("../images/kinder_170.png");
+	height: 170px;
+	width:  368px;
+}
+
+* html .headerimage_right {
+	background-image: url("../images/kinder_170_png8.png");
+}
+
+/******************************************************************************/
+
+.topmenu a:hover {
+	text-shadow: 0 0 2px white, 0 0 2px white;
+}
+
+.navigation a:hover {
+	text-shadow: 0 0 2px white;
+}
+
+.navigation a:hover {
+	box-shadow: 0 0 10px white;
+}

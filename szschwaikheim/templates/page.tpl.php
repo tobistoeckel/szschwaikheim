@@ -69,77 +69,54 @@
  */
 ?>
 
-<div id="header"><div class="section clearfix">
+<!-- BEGIN HEADER -->
+	<div class="header">
+		
+		<!-- BEGIN LOGO -->
+		    <?php if ($logo): ?>
+		      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+		    <?php endif; ?>
+		<!-- END LOGO -->
+	    
+	    <div class="grid_container">
+	    	<h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a></h1>
+		</div>
+		
+		<div class="headerimage_right"></div>
+	
+	</div>
+<!-- END HEADER -->
 
-    <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-    <?php endif; ?>
+<!-- BEGIN TOPMENU -->      
+	<div class="topmenu clearfix">
+    	<div class="grid_container">
 
-    <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan">
-        <?php if ($site_name): ?>
-          <?php if ($title): ?>
-            <div id="site-name"><strong>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </strong></div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-        <?php endif; ?>
+	        <?php print theme('links__system_main_menu', array(
+	          'links' => $main_menu,
+	          'attributes' => array(),
+	          'heading' => array(
+	            'text' => t('Main menu'),
+	            'level' => 'h2',
+	            'class' => array('element-invisible'),
+	          ),
+	        )); ?>
+	
+	        <?php print render($page['navigation']); ?>
 
-        <?php if ($site_slogan): ?>
-          <div id="site-slogan"><?php print $site_slogan; ?></div>
-        <?php endif; ?>
-      </div><!-- /#name-and-slogan -->
-    <?php endif; ?>
+    	</div>
+	</div>
+<!-- END TOPMENU -->
 
-    <?php print theme('links__system_secondary_menu', array(
-      'links' => $secondary_menu,
-      'attributes' => array(
-        'id' => 'secondary-menu',
-        'class' => array('links', 'inline', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => $secondary_menu_heading,
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    )); ?>
+<!-- BEGIN BODY -->
+	<div class="grid_container body clearfix">
 
-    <?php print render($page['header']); ?>
+	<!-- BEGIN LEFT SIDEBAR -->
+		<div class="grid_left sidebar navigation">
+			<?php print render($page['sidebar_first']); ?>
+		</div>
+	<!-- END LEFT SIDEBAR -->
 
-  </div></div><!-- /.section, /#header -->
-
-    <?php if ($page['navigation'] || $main_menu): ?>
-      <div id="navigation"><div class="section clearfix"><div class="grid_container">
-
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu',
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-
-        <?php print render($page['navigation']); ?>
-
-      </div></div></div><!-- /.section, /#navigation -->
-    <?php endif; ?>
-
-<div id="page-wrapper"><div id="page">
-
-  
-
-  <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
-
-    <div id="content" class="column"><div class="section">
+    <div id="content" class="column prefix_3 grid_13"><div class="section">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -160,7 +137,7 @@
       <?php print $feed_icons; ?>
     </div></div><!-- /.section, /#content -->
 
-    <?php print render($page['sidebar_first']); ?>
+    
 
     <?php print render($page['sidebar_second']); ?>
 
