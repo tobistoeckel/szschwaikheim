@@ -116,7 +116,7 @@
 		</div>
 	<!-- END LEFT SIDEBAR -->
 
-    <div id="content" class="column prefix_3 grid_13"><div class="section">
+    <div id="content" class="grid_13"><div class="section">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
