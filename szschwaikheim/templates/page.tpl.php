@@ -111,7 +111,7 @@
 	<div class="grid_container body clearfix">
 
 		<!-- BEGIN LEFT SIDEBAR -->
-			<div class="grid_left sidebar navigation">
+			<div class="grid_left sidebar">
 				<?php print render($page['sidebar_first']); ?>
 			</div>
 		<!-- END LEFT SIDEBAR -->

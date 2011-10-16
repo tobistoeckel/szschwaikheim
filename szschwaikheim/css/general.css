@@ -8,12 +8,12 @@
 /* Orange Gradient */
 .topmenu,
 .sidebar h2,
-.navigation .active a,
-.navigation .active a:hover,
-.navigation .parent a,
-.navigation .parent a:hover,
-.navigation .parent li.active a,
-.navigation .parent li.active a:hover {
+.block-menu a.active,
+.block-menu a.active:hover,
+.block-menu .expanded a,
+.block-menu .expanded a:hover,
+.block-menu .expanded a.active,
+.block-menu .expanded a.active:hover {
 	/* Fallback Color */       background: #FFD900;
    /* Fallback Image */       background: url("../images/gradient_orange.png");
    /* Fallback SVG */         background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5MzUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkQ5MDAiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRjgwMDAiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c5MzUpIiAvPgo8L3N2Zz4=);
@@ -27,9 +27,9 @@
 }
 
 /* Orange Gradient Reversed */
-.navigation .active a:active,
-.navigation .parent a:active,
-.navigation .parent li.active a:active,
+.block-menu a.active:active,
+.block-menu .expanded a:active,
+.block-menu .expanded a.active:active,
 .topmenu a:active {
    /* Fallback Color */       background: #FF8000;
    /* Fallback Image */       background: url("../images/gradient_orange_reverse.png");
@@ -45,8 +45,8 @@
 
 /* Rounded Corners */
 .content,
-.navigation a,
-.navigation li,
+.block-menu a,
+.block-menu li,
 .news,
 .footer .inner {
 	border-radius: 10px;
@@ -79,7 +79,7 @@ p {
    text-align: center;
 } 
 
-.navigation a {
+.block-menu a {
 	color: black;
 	text-decoration: none;
 }
@@ -156,18 +156,18 @@ body {
    padding: 10px;
 }
 
-.navigation ul {
+.block-menu ul {
    list-style-type: none;
    margin:          0;
    padding:         0;
 }
 
-.navigation li {
+.block-menu li {
 	margin:        0;
 	margin-bottom: 10px;
 }
 
-.navigation a {
+.block-menu a {
    /* Apply all styling to the a-tag to get hover-support in IE */
    display:       block;
    padding:       5px;
@@ -206,22 +206,22 @@ body {
 
 /* White Transparent Background */
 .transparent-container,
-.navigation a,
-.parent,
+.block-menu a,
+.expanded,
 .footer .inner,
 .news {
    background-image: url("../images/pixel_75.png");
 }
 
 .transparent-container,
-.navigation a,
-.parent,
+.block-menu a,
+.expanded,
 .footer .inner,
 .news {
 	border: 1px white solid;
 }
 
-.navigation .parent li a {
+.block-menu .expanded li a {
 	background-image: none;
 	background-color: none;
 	filter: none;
@@ -232,51 +232,51 @@ body {
    font-weight: bold;
 }
 
-.navigation a:hover,
-.navigation .parent li a:hover {
+.block-menu a:hover,
+.block-menu .expanded li a:hover {
 	filter: none;
 	background-image: url("../images/pixel_75.png");
 }
 
-.navigation a:active {
+.block-menu a:active {
 	background-color: white;
 }
 
 
 
 
-.navigation .active a {
+.block-menu .active a {
    font-weight: bold;
 }
 
-.navigation .active a:hover {
+.block-menu .active a:hover {
 }
 
-.navigation .parent a:hover {
+.block-menu .expanded a:hover {
 }
 
-.navigation .parent li a {
+.block-menu .expanded li a {
 	filter: none;
    font-weight: normal;
 }
 
-.navigation .parent li a:active {
+.block-menu .expanded li a:active {
    filter: none;
    background: white;
 }
 
-.navigation .parent li.active a {
+.block-menu .expanded li.active a {
    font-weight: bold;
 }
 
-.navigation .parent li.active a:hover {
+.block-menu .expanded li.active a:hover {
 }
 
-.navigation .parent a {
+.block-menu .expanded a {
 	border: none;
 }
 
-.navigation .parent li {
+.block-menu .expanded li {
 	margin-bottom: 0;
 }
 
@@ -312,10 +312,10 @@ body {
 	text-shadow: 0 0 2px white, 0 0 2px white;
 }
 
-.navigation a:hover {
+.block-menu a:hover {
 	text-shadow: 0 0 2px white;
 }
 
-.navigation a:hover {
+.block-menu a:hover {
 	box-shadow: 0 0 10px white;
 }
