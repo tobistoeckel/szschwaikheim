@@ -4,3 +4,20 @@
  */
 
 
+.views-view-grid td {
+	background-image: url("../images/pixel_75.png");
+	border: 1px white solid;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+table.views-view-grid {
+	border-spacing: 20px;
+	border-collapse: separate;
+}
+
+.views-view-grid h2.node-title {
+	
+}

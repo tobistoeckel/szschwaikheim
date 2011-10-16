@@ -118,7 +118,7 @@
 	    	
 	    	<!-- BEGIN HIGHLIGHTED -->
 		    	<?php if ($page['highlighted'] or $page['help']): ?>
-			    	<div class="highlighted content transparent-container">
+			    	<div class="highlighted main-content transparent-container">
 			      		<?php print render($page['highlighted']); ?>
 			      		<?php print render($page['help']); ?>
 			      	</div>
@@ -126,9 +126,8 @@
 			<!-- END HIGHLIGHTED -->
 			
 			<!-- BEGIN CONTENT -->
-		    	<div id="content" class="content transparent-container">
-		    		<?php print $breadcrumb; ?>
-	      			<a id="main-content"></a> <!-- WTF? -->
+		    	<div id="content" class="main-content transparent-container">
+		    		<a id="main-content"></a> <!-- WTF? -->
 	      			<?php print render($title_prefix); ?>
 	      			<?php if ($title): ?>
 	        			<h2 class="title" id="page-title"><?php print $title; ?></h1>

@@ -44,7 +44,7 @@
 }
 
 /* Rounded Corners */
-.content,
+.main-content,
 .block-menu ul.menu a,
 .block-menu li,
 .news,
@@ -149,7 +149,7 @@ body {
 }
 
 .sidebar,
-.content {
+.main-content {
    margin-bottom: 20px;
 }
 
@@ -157,8 +157,9 @@ body {
    margin-bottom: 20px;
 }
 
-.content {
+.main-content {
    padding: 20px;
+   padding-bottom: 0;
 }
 
 .news {
@@ -313,6 +314,11 @@ body {
 
 * html .headerimage_right {
 	background-image: url("../images/kinder_170_png8.png");
+}
+
+.footer .inner {
+	padding: 20px;
+	padding-bottom: 0;
 }
 
 /******************************************************************************/
