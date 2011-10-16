@@ -330,6 +330,10 @@ body {
 	margin-bottom: 20px;
 }
 
+body.cke_show_borders {
+	background-color: white;
+}
+
 /******************************************************************************/
 
 .topmenu a:hover {

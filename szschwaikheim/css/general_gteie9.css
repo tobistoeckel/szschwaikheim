@@ -1,0 +1,19 @@
+/* Disable legacy IE-Gradient-Filters because IE9 has to be served SVG-Sprite-Gradients :-/ */
+                  .bgstretcher, .button, .header, .topmenu, .topmenu li, .topmenu a, .sidebar h2, .block-menu a {
+                     filter: none !important;
+                  }
+                  
+.topmenu a:hover,
+div.block-menu ul.menu .leaf a.active:hover,
+div.block-menu ul.menu a.active-trail:hover {
+	/* Fallback SVG */         background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5NzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkUzNDAiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRkEwNDAiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c5NzIpIiAvPgo8L3N2Zz4=) !important;
+   /* IE10+ */                background: -ms-linear-gradient(top, #FFE340 0%,#FFA040 100%);
+}
+
+/* in order to override hover styles again */
+.topmenu a:active,
+div.block-menu ul.menu .leaf a.active: active,
+div.block-menu ul.menu a.active-trail: active {
+   /* Fallback SVG */         background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0ZGODAwMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRDkwMCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzc5KSIgLz4KPC9zdmc+) !important;
+   /* IE10+ */                background: -ms-linear-gradient(top, #ff8000 0%,#ffd900 100%);
+}

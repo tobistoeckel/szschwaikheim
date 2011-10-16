@@ -63,7 +63,10 @@ stylesheets[print][]      = css/print.css
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
 stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
-
+stylesheets-conditional[IE][all][]        = css/general_ie.css
+stylesheets-conditional[gte IE 7][all][]  = css/general_gteie7.css
+stylesheets-conditional[gte IE 9][all][]  = css/general_gteie9.css
+stylesheets-conditional[lte IE 6][all][]  = css/general_lteie6.css
 
 
 ; Optionally add some JavaScripts to your theme.

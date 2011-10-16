@@ -113,6 +113,25 @@
 				<?php print render($page['sidebar_first']); ?>
 			</div>
 		<!-- END LEFT SIDEBAR -->
+		
+		<!--[if lte ie 6]> 
+			<div class="grid_13">
+				<div class="messages warning">
+					<h2 class="element-invisible">Warnung</h2>
+					Sie verwenden eine veraltete Version des Internet Explorer. Manche Elemente dieser Webseite werden
+					in diesem Browser nicht korrekt angezeigt. Wir empfehlen Ihnen, auf einen aktuellen Browser umzusteigen.
+				</div>
+			</div>
+		<![endif]-->
+		
+		<noscript>
+			<div class="grid_13">
+				<div class="messages warning">
+					<h2 class="element-invisible">Warnung</h2>
+					Um die korrekte Darstellung dieser Webseite zu ermöglichen, aktivieren Sie bitte JavaScript.
+				</div>
+			</div>
+		</noscript>
 	
 	    <div class="grid_13">
 	    	

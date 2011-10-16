@@ -1,0 +1,10 @@
+/* White Transparent Background */
+.transparent-container,
+.block-menu ul a,
+.block-menu ul .expanded li a,
+.expanded,
+.block-menu ul a:hover,
+.block-menu .expanded li a:hover {
+   background-image: none;
+   background-color: white;
+}
