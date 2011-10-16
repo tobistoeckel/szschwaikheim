@@ -67,14 +67,17 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+    
   <?php print $scripts; ?>
-  <script type="text/javascript">
-  	$(document).ready(function(){
-  		$('BODY').bgStretcher({
-  			images: ['<?php print base_path() . $directory; ?>/images/mountains.jpg'], imageWidth: 1024, imageHeight: 706
-  		});
-  	});
-  </script>
+  <!--[if !IE 6]><!-->
+	  <script type="text/javascript">
+	  	$(document).ready(function(){
+	  		$('BODY').bgStretcher({
+	  			images: ['<?php print base_path() . $directory; ?>/images/mountains.jpg'], imageWidth: 1024, imageHeight: 706
+	  		});
+	  	});
+	  </script>
+  <!--<![endif]-->
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

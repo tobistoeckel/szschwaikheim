@@ -1,6 +1,6 @@
 /*
 	Background Stretcher jQuery Plugin
-	© 2011 ajaxBlender.com
+	ï¿½ 2011 ajaxBlender.com
 	For any questions please visit www.ajaxblender.com 
 	or email us at support@ajaxblender.com
 */
@@ -18,7 +18,7 @@ HTML {_background: url(/images/trans.gif) no-repeat fixed;}
 	list-style: none;
 }
 .bgstretcher {
-	background: black;
+	background: #5DA6D7;
 	overflow: hidden;
 	width: 100%;
 	position: fixed;
