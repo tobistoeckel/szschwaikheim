@@ -8,6 +8,10 @@
   margin-bottom: 1.5em;
 }
 
+.sidebar .block {
+	margin-bottom: 40px;
+}
+
 .block.first /* The first block in the region */ {
 }
 

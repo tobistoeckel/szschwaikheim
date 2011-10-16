@@ -54,6 +54,14 @@ li a.active {
 	font-weight: bold !important;
 }
 
+.block-menu li.expanded a {
+	border: none;
+}
+
+.block-menu li.expanded ul a {
+	background: none;
+}
+
 /*
  * "Menu block" blocks
  *

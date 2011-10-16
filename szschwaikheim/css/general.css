@@ -10,8 +10,8 @@
 .sidebar h2,
 .block-menu ul.menu a.active,
 .block-menu ul.menu a.active:hover,
-.block-menu .expanded a,
-.block-menu .expanded a:hover,
+.block-menu .expanded a.active-trail,
+.block-menu .expanded a.active-trail:hover,
 .block-menu .expanded a.active,
 .block-menu .expanded a.active:hover {
 	/* Fallback Color */       background: #FFD900;
@@ -28,7 +28,7 @@
 
 /* Orange Gradient Reversed */
 .block-menu ul.menu a.active:active,
-.block-menu .expanded a:active,
+.block-menu .expanded a.active-trail:active,
 .block-menu .expanded a.active:active,
 .topmenu a:active {
    /* Fallback Color */       background: #FF8000;
