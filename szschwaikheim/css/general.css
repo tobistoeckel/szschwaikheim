@@ -8,8 +8,8 @@
 /* Orange Gradient */
 .topmenu,
 .sidebar h2,
-.block-menu a.active,
-.block-menu a.active:hover,
+.block-menu ul.menu a.active,
+.block-menu ul.menu a.active:hover,
 .block-menu .expanded a,
 .block-menu .expanded a:hover,
 .block-menu .expanded a.active,
@@ -27,7 +27,7 @@
 }
 
 /* Orange Gradient Reversed */
-.block-menu a.active:active,
+.block-menu ul.menu a.active:active,
 .block-menu .expanded a:active,
 .block-menu .expanded a.active:active,
 .topmenu a:active {
@@ -45,7 +45,7 @@
 
 /* Rounded Corners */
 .content,
-.block-menu a,
+.block-menu ul.menu a,
 .block-menu li,
 .news,
 .footer .inner {
@@ -79,7 +79,7 @@ p {
    text-align: center;
 } 
 
-.block-menu a {
+.block-menu ul.menu a {
 	color: black;
 	text-decoration: none;
 }
@@ -136,7 +136,7 @@ body {
    margin-top:    0;
    margin-bottom: 10px;
    /* TODO reasonable padding */
-   padding:       10px;
+   padding:       5px;
 }
 
 .sidebar,
@@ -167,7 +167,7 @@ body {
 	margin-bottom: 10px;
 }
 
-.block-menu a {
+.block-menu ul.menu a {
    /* Apply all styling to the a-tag to get hover-support in IE */
    display:       block;
    padding:       5px;
@@ -206,7 +206,7 @@ body {
 
 /* White Transparent Background */
 .transparent-container,
-.block-menu a,
+.block-menu ul.menu a,
 .expanded,
 .footer .inner,
 .news {
@@ -214,7 +214,7 @@ body {
 }
 
 .transparent-container,
-.block-menu a,
+.block-menu ul.menu a,
 .expanded,
 .footer .inner,
 .news {
@@ -232,13 +232,13 @@ body {
    font-weight: bold;
 }
 
-.block-menu a:hover,
+.block-menu ul.menu a:hover,
 .block-menu .expanded li a:hover {
 	filter: none;
 	background-image: url("../images/pixel_75.png");
 }
 
-.block-menu a:active {
+.block-menu ul.menu a:active {
 	background-color: white;
 }
 
@@ -312,10 +312,10 @@ body {
 	text-shadow: 0 0 2px white, 0 0 2px white;
 }
 
-.block-menu a:hover {
+.block-menu ul.menu a:hover {
 	text-shadow: 0 0 2px white;
 }
 
-.block-menu a:hover {
+.block-menu ul.menu a:hover {
 	box-shadow: 0 0 10px white;
 }

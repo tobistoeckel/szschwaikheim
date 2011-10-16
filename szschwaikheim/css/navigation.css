@@ -50,6 +50,10 @@ li a.active {
 .block-menu {
 }
 
+.block-menu ul a.active {
+	font-weight: bold !important;
+}
+
 /*
  * "Menu block" blocks
  *
