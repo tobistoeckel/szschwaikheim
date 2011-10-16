@@ -200,3 +200,7 @@ svg {
 */
   overflow: hidden;
 }
+
+a:focus {
+	outline: none;
+}
