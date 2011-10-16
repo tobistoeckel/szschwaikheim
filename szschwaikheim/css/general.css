@@ -321,6 +321,15 @@ body {
 	padding-bottom: 0;
 }
 
+.highlighted {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.highlighted .block {
+	margin-bottom: 20px;
+}
+
 /******************************************************************************/
 
 .topmenu a:hover {

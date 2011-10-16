@@ -9,8 +9,14 @@
 	border: 1px white solid;
 	border-radius: 10px;
 	padding: 20px;
+	padding-top: 10px;
 	margin: 20px;
 	text-align: center;
+}
+
+.views-view-grid td:hover {
+	box-shadow: 0 0 10px white;
+	background-image: url("../images/pixel_90.png");
 }
 
 table.views-view-grid {
@@ -18,6 +24,16 @@ table.views-view-grid {
 	border-collapse: separate;
 }
 
-.views-view-grid h2.node-title {
-	
+.views-view-grid h2 {
+	margin-bottom: 10px;
+}
+
+.views-view-grid h2.node-title a {
+	color: black;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.views-view-grid h2.node-title a:hover {
+	text-decoration: underline;
 }

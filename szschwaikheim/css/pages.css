@@ -118,6 +118,10 @@ h3.title /* Comment title */ {
   margin: 0;
 }
 
+h2.title {
+	margin-bottom: 0.7em;
+}
+
 tr.even /* Some tables have rows marked even or odd. */ {
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
