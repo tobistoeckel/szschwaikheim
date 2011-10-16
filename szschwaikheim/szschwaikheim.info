@@ -39,6 +39,7 @@ stylesheets[all][]        = css/text.css
 stylesheets[all][]        = css/general.css
 stylesheets[all][]        = css/wireframes.css
 stylesheets[all][]        = css/page-backgrounds.css
+stylesheets[all][]        = css/bgstretcher.css
 stylesheets[all][]        = css/tabs.css
 stylesheets[all][]        = css/pages.css
 stylesheets[all][]        = css/blocks.css
@@ -71,7 +72,8 @@ stylesheets-conditional[lte IE 6][all][]  = css/general_lteie6.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = js/jquery-1.5.2.min.js
+scripts[] = js/bgstretcher.js
 
 
 
