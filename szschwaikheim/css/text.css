@@ -1,0 +1,108 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+/* Fonts
+----------------------------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans&v2);
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  font: 13px/1.5 'Droid Sans','Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+a {
+	color: #0052a4;
+}
+
+a:hover {
+	color: #5da6d7;
+}
+
+a:active {
+	color: #ffd900;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+h3 {
+	margin-bottom: 15px;
+}

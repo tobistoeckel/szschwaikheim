@@ -110,43 +110,56 @@
 <!-- BEGIN BODY -->
 	<div class="grid_container body clearfix">
 
-	<!-- BEGIN LEFT SIDEBAR -->
-		<div class="grid_left sidebar navigation">
-			<?php print render($page['sidebar_first']); ?>
-		</div>
-	<!-- END LEFT SIDEBAR -->
+		<!-- BEGIN LEFT SIDEBAR -->
+			<div class="grid_left sidebar navigation">
+				<?php print render($page['sidebar_first']); ?>
+			</div>
+		<!-- END LEFT SIDEBAR -->
+	
+	    <div class="grid_13">
+	    	
+	    	<!-- BEGIN HIGHLIGHTED -->
+		    	<?php if ($page['highlighted'] or $page['help']): ?>
+			    	<div class="highlighted content transparent-container">
+			      		<?php print render($page['highlighted']); ?>
+			      		<?php print render($page['help']); ?>
+			      	</div>
+			    <?php endif; ?>
+			<!-- END HIGHLIGHTED -->
+			
+			<!-- BEGIN CONTENT -->
+		    	<div id="content" class="content transparent-container">
+		    		<?php print $breadcrumb; ?>
+	      			<a id="main-content"></a> <!-- WTF? -->
+	      			<?php print render($title_prefix); ?>
+	      			<?php if ($title): ?>
+	        			<h2 class="title" id="page-title"><?php print $title; ?></h1>
+	      			<?php endif; ?>
+	      			<?php print render($title_suffix); ?>
+	      			<?php print $messages; ?>
+	      			<?php if ($tabs = render($tabs)): ?>
+	        			<div class="tabs"><?php print $tabs; ?></div>
+	      			<?php endif; ?>
+	      			<?php if ($action_links): ?>
+	        			<ul class="action-links"><?php print render($action_links); ?></ul>
+	      			<?php endif; ?>
+	      			
+	      			<?php print render($page['content']); ?>
+	      			
+	      			<?php print $feed_icons; ?>
+	    		</div>
+	    	<!-- END CONTENT -->
+	    
+	    </div>
+	    
+	    <div class="grid_full footer">
+	    	<div class="inner">
+	    		<?php print render($page['footer']); ?>
+	    	</div>
+	    </div>
 
-    <div id="content" class="grid_13">
-    	<div class="content transparent-container">
-      <?php print render($page['highlighted']); ?>
-      <?php print render($page['help']); ?></div>
-    	<div class="content transparent-container">
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if ($tabs = render($tabs)): ?>
-        <div class="tabs"><?php print $tabs; ?></div>
-      <?php endif; ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-    </div></div><!-- /.section, /#content -->
+  	</div>
 
-    
-
-    <?php print render($page['sidebar_second']); ?>
-
-  </div></div><!-- /#main, /#main-wrapper -->
-
-  <?php print render($page['footer']); ?>
-
-</div></div><!-- /#page, /#page-wrapper -->
+  	
 
 <?php print render($page['bottom']); ?>
