@@ -73,13 +73,11 @@
 	<div class="header">
 		
 		<!-- BEGIN LOGO -->
-		    <?php if ($logo): ?>
-		      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-		    <?php endif; ?>
+			<div class="headerimage_left"></div>
 		<!-- END LOGO -->
 	    
 	    <div class="grid_container">
-	    	<h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a></h1>
+	    	<h1 id="title"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a></h1>
 		</div>
 		
 		<div class="headerimage_right"></div>
