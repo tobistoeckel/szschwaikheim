@@ -24,10 +24,12 @@ hr {
 
 a {
 	color: #0052a4;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #5da6d7;
+	text-decoration: underline;
 }
 
 a:active {
