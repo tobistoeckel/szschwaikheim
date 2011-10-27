@@ -55,6 +55,19 @@ h2 {
   font-size: 21px;
 }
 
+.view .node-title {
+	font-size: 19px;
+}
+
+.view .node-title a {
+	color: black;
+}
+
+.view .node-title a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
 h3 {
   font-size: 19px;
 }

@@ -37,3 +37,48 @@ table.views-view-grid {
 .views-view-grid h2.node-title a:hover {
 	text-decoration: underline;
 }
+
+.submitted {
+	position: static;
+	top: 0;
+	right: 0;
+	color: gray;
+	margin-bottom: 5px;
+}
+
+.view-news h2.node-title {
+	margin-bottom: 0px;
+}
+
+.view-news .field-type-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.view-news .links {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.view-news .links li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.view-news p {
+	margin-bottom: 0;
+}
+
+.view-news .views-row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px white solid;
+}
+
+.node-newsartikel.view-mode-full .field-type-image {
+	float: right;
+}
