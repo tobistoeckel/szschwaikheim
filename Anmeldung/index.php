@@ -179,7 +179,7 @@
 			<fieldset>
 				<legend>Zahlung</legend>
 				<p>Der Gesamtbetrag von € <?php create_text_input("betrag", $_POST['betrag'], $messages);?> * wird rechtzeitig auf das Konto 829 791 000
-				   der Skizunft Schwaikheim e.V. bei der Volksbank Rems (BLZ 602 901 10) überwiesen.</p>
+				   der Skizunft Schwaikheim e.V. bei der Volksbank Stuttgart (BLZ 600 901 00) überwiesen.</p>
 				<p>Eine Kopie dieses Formulars wird Ihnen per E-Mail zugeschickt.</p>
 			</fieldset>
 			<input name="control" id="control" type="text" style="display: none;" />
