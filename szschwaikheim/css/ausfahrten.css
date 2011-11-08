@@ -1,0 +1,8 @@
+/* All styling only to be applied to class .node-ausfahrt */
+
+/* Float the article's image to the right */
+.node-ausfahrt .field-name-field-img {
+	display:     block;
+	float:       right;
+	margin-left: 1em;
+}
