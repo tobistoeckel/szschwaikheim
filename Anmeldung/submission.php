@@ -48,7 +48,7 @@
 		$body .= "</table>\n<p><b>Mitteilungen an die Anmeldung:</b></p>\n";
 		$body .= "<pre>" . $post['mitteilung'] . "</pre>\n";
 		$body .= "<p><b>Zahlungsdaten</b></p>\n";
-		$body .= "<p>Der Gesamtbetrag von € " . $post['betrag'] . " wird rechtzeitig auf das Konto 829 791 000 der Skizunft Schwaikheim e.V. bei der Volksbank Rems (BLZ 602 901 10) überwiesen.</p>";
+		$body .= "<p>Der Gesamtbetrag von € " . $post['betrag'] . " wird rechtzeitig auf das Konto 829 791 000 der Skizunft Schwaikheim e.V. bei der Volksbank Stuttgart (BLZ 600 901 00) überwiesen.</p>";
 		
 		$body = wordwrap($body, 70);
 		
