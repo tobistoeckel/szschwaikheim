@@ -149,7 +149,7 @@
 		    		<a id="main-content"></a> <!-- WTF? -->
 	      			<?php print render($title_prefix); ?>
 	      			<?php if ($title): ?>
-	        			<h2 class="title" id="page-title"><?php print $title; ?></h1>
+	        			<h2 class="title" id="page-title"><?php print $title; ?></h2>
 	      			<?php endif; ?>
 	      			<?php print render($title_suffix); ?>
 	      			<?php print $messages; ?>

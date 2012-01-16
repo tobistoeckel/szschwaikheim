@@ -74,7 +74,8 @@ stylesheets-conditional[lte IE 6][all][]  = css/general_lteie6.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/jquery-1.5.2.min.js
+; scripts[] = js/jquery-1.5.2.min.js      I think, this one messed up the WYSIWYG-editor (because it overwrites drupal's
+;                                         'once'-plugin that is defined earlier during script loading).
 scripts[] = js/bgstretcher.js
 
 
@@ -100,6 +101,7 @@ regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+regions[closure]        = Closure (only for FCKEditor)
 
 
 

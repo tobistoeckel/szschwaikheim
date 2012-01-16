@@ -71,8 +71,8 @@
   <?php print $scripts; ?>
   <!--[if !IE 6]><!-->
 	  <script type="text/javascript">
-	  	$(document).ready(function(){
-	  		$('BODY').bgStretcher({
+	  	jQuery(document).ready(function(){
+	  		jQuery('BODY').bgStretcher({
 	  			images: ['<?php print base_path() . $directory; ?>/images/mountains.jpg'], imageWidth: 1024, imageHeight: 706
 	  		});
 	  	});
@@ -86,5 +86,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <?php print $closure; ?>
 </body>
 </html>
