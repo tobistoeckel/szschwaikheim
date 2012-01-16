@@ -1,5 +1,6 @@
 <?php
 	require_once("formulardaten.php");
+  require_once("postvariables.php");
 	require_once("validation.php");
 	require_once("submission.php");
 	require_once("lightbox.php");
@@ -20,7 +21,8 @@
 	}
 	
 	function create_text_input($name, $value, $messages) {
-		if($messages[$name]) $class = "input_err";
+	  $class = "";
+		if(isset($messages[$name])) $class = "input_err";
 		$input = '<input type="text" class="' . $class . '" name="' . $name . '" value ="' . $value . '" />';
 		echo $input;
 	}
@@ -88,39 +90,39 @@
 				<table>
 					<tr>
 						<td>Name, Vorname</td>
-						<td><?php create_text_input("bestellname", $_POST['bestellname'], $messages);?> *</td>
+						<td><?php create_text_input("bestellname", $bestellname, $messages);?> *</td>
 					</tr>
 					<tr>
 						<td>Straße</td>
-						<td><?php create_text_input("strasse", $_POST['strasse'], $messages);?> *</td>
+						<td><?php create_text_input("strasse", $strasse, $messages);?> *</td>
 					</tr>
 					<tr>
 						<td>Postleitzahl</td>
-						<td><?php create_text_input("plz", $_POST['plz'], $messages);?></td>
+						<td><?php create_text_input("plz", $plz, $messages);?></td>
 					</tr>
 					<tr>
 						<td>Ort</td>
-						<td><?php create_text_input("ort", $_POST['ort'], $messages);?></td>
+						<td><?php create_text_input("ort", $ort, $messages);?></td>
 					</tr>
 					<tr>
 						<td>Telefon (geschäftl.)</td>
-						<td><?php create_text_input("telgesch", $_POST['telgesch'], $messages);?></td>
+						<td><?php create_text_input("telgesch", $telgesch, $messages);?></td>
 					</tr>
 					<tr>
 						<td>Telefon (privat)</td>
-						<td><?php create_text_input("telpriv", $_POST['telpriv'], $messages);?> *</td>
+						<td><?php create_text_input("telpriv", $telpriv, $messages);?> *</td>
 					</tr>
 					<tr>
 						<td>Telefon (mobil)</td>
-						<td><?php create_text_input("telmob", $_POST['telmob'], $messages);?></td>
+						<td><?php create_text_input("telmob", $telmob, $messages);?></td>
 					</tr>
 					<tr>
 						<td>Fax</td>
-						<td><?php create_text_input("fax", $_POST['fax'], $messages);?></td>
+						<td><?php create_text_input("fax", $fax, $messages);?></td>
 					</tr>
 					<tr>
 						<td>E-Mail</td>
-						<td><?php create_text_input("mail", $_POST['mail'], $messages);?> *</td>
+						<td><?php create_text_input("mail", $mail, $messages);?> *</td>
 					</tr>
 				</table>
 			</fieldset>
@@ -131,18 +133,18 @@
 							<td rowspan="2">Buchung</td>
 							<td>
 								<?php
-									create_select('buchung', $ausfahrten, $_POST['buchung']);
+									create_select('buchung', $ausfahrten, $buchung);
 								?>
 							</td>
-							<td>nach <?php create_text_input("nach", $_POST['nach'], $messages);?></td>
+							<td>nach <?php create_text_input("nach", $nach, $messages);?></td>
 						</tr>
 						<tr>
 							<td>
 								<?php
-									create_select('paket', $pakete, $_POST['paket']);
+									create_select('paket', $pakete, $paket);
 								?>
 							</td>
-							<td>Ausfahrten Nr. <?php create_text_input("ausfahrtnr", $_POST['ausfahrtnr'], $messages);?></td>
+							<td>Ausfahrten Nr. <?php create_text_input("ausfahrtnr", $ausfahrtnr, $messages);?></td>
 						</tr>
 					</table>
 			</fieldset>
@@ -174,11 +176,11 @@
 			</fieldset>
 			<fieldset>
 				<legend>Mitteilungen an die Anmeldung</legend>
-				<textarea cols="50" rows="10" wrap="soft" name="mitteilung"><?php echo $_POST['mitteilung']; ?></textarea>
+				<textarea cols="50" rows="10" wrap="soft" name="mitteilung"><?php echo $mitteilung; ?></textarea>
 			</fieldset>
 			<fieldset>
 				<legend>Zahlung</legend>
-				<p>Der Gesamtbetrag von € <?php create_text_input("betrag", $_POST['betrag'], $messages);?> * wird rechtzeitig auf das Konto 829 791 000
+				<p>Der Gesamtbetrag von € <?php create_text_input("betrag", $betrag, $messages);?> * wird rechtzeitig auf das Konto 829 791 000
 				   der Skizunft Schwaikheim e.V. bei der Volksbank Stuttgart (BLZ 600 901 00) überwiesen.</p>
 				<p>Eine Kopie dieses Formulars wird Ihnen per E-Mail zugeschickt.</p>
 			</fieldset>
