@@ -330,8 +330,10 @@ body {
 	margin-bottom: 20px;
 }
 
+/* Fixing FCKeditor */
 body.cke_show_borders {
 	background-color: white;
+	min-width: 0;
 }
 
 /******************************************************************************/
