@@ -1,0 +1,21 @@
+.skilehrer-page .skilehrer-cell {
+  float: left;
+  width: 159px;
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skilehrer-page .skilehrer-cell img {
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.skilehrer-page div.clear {
+  clear: both;
+}
+
+.skilehrer-page h3,
+.skilehrer-page h4 {
+  clear: both;
+}
